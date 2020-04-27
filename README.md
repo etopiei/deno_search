@@ -5,7 +5,7 @@ A CLI utility to search for deno packages.
 ## Installation
 
 ```bash
-$ deno install --allow-net ds https://github.com/etopiei/deno_search/master/main.ts
+$ deno install --allow-net ds https://github.com/etopiei/deno_search/raw/master/main.ts
 ```
 
 ## Usage
@@ -16,6 +16,11 @@ e.g.
 
 ```bash
 $ ds "web"
+```
+
+Returns: 
+
+```text
 abc - A better Deno framework to create web application
 alosaur - Alosaur - Deno web framework 🦖.
 bwt - Better Web Token,  a web token format, generation, and verification scheme
@@ -27,3 +32,12 @@ pogo - Pogo is an easy to use, safe, and expressive framework for writing web se
 saur - Deno Saur is a full-stack web application framework with a focus on rapid development, similar to Django or Ruby on Rails.
 webview - Deno bindings for webview, a tiny library for creating web-based desktop GUIs
 ```
+
+Currently searching for multiple search terms is inclusive. i.e. If you search:
+
+```bash
+$ ds "web" "server"
+```
+
+deno_search will look for packages with either "web" or "server"
+ in their description.
