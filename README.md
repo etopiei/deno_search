@@ -39,5 +39,10 @@ Currently searching for multiple search terms is inclusive. i.e. If you search:
 $ ds "web" "server"
 ```
 
-deno_search will look for packages with either "web" or "server"
- in their description.
+deno_search will look for packages with either "web" or "server" in their description.
+
+## Ideas
+
+ - Allow exclusive searching
+ - Enable caching of db
+ - Allow links to packages?
