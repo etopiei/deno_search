@@ -16,7 +16,7 @@ fetch(DB_URL).then(r => r.json()).then((pkgs: DenoDB) => {
 	const pkg_names = Object.keys(pkgs);
 	pkg_names.forEach((name: string) => {
 		searchTerms.forEach((s: string) => {
-			if (pkgs[name].desc && pkgs[name].desc.toLowerCase().indexOf(s.toLowerCase()) > -1) {
+			if (pkgs[name].desc && pkgs[name].desc!.toLowerCase().indexOf(s.toLowerCase()) > -1) {
 				console.log(`${green(name)} - ${pkgs[name].desc}`);
 			}
 		});
