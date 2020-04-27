@@ -5,7 +5,7 @@ A CLI utility to search for deno packages.
 ## Installation
 
 ```bash
-$ deno install --allow-net ds https://github.com/etopiei/deno_search/raw/master/main.ts
+deno install -f --allow-net ds https://deno.land/x/deno_search/main.ts
 ```
 
 ## Usage
